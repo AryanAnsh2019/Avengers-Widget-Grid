@@ -120,6 +120,19 @@ h6 {
   font-size: 1.6rem;
   font-weight: 500;
 }
+.hero {
+  font-size: 1.3rem;
+  line-height: 3rem;
+  font-weight: 300;
+}
+.lead {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 2rem;
+}
+.grey {
+  color: var(--grey);
+}
 
 /* Widget Styling */
 .widget {
@@ -130,9 +143,6 @@ h6 {
 }
 
 /* Account widget */
-#account p {
-  color: var(--grey);
-}
 #account > img {
   width: 100%;
   height: 200px;
@@ -156,14 +166,8 @@ h6 {
   border-radius: 50%;
   box-shadow: 0 5px 10px 3px rgba(0, 0, 0, 0.3);
 }
-#weather span {
-  font-size: 0.9rem;
-  color: var(--grey);
-  font-weight: 500;
-}
 #weather > i {
   font-size: 1.4rem;
-  color: var(--grey);
   border: 1px solid var(--grey);
   border-radius: 50%;
   padding: 2px 5px;
@@ -189,11 +193,7 @@ h6 {
   justify-content: space-between;
 }
 #payment > p {
-  color: var(--grey);
   margin-top: 20px;
-  font-size: 1.2rem;
-  line-height: 2rem;
-  font-weight: 300;
 }
 
 /* Current Widget */
@@ -238,9 +238,6 @@ h6 {
 #time h1 {
   color: var(--brown);
 }
-#time span {
-  color: var(--grey);
-}
 #time p {
   position: absolute;
   bottom: 40px;
@@ -261,13 +258,11 @@ h6 {
 .health-widget > span {
   display: block;
 }
-.health-widget > span:nth-of-type(1) {
-  color: var(--grey);
+.health-widget > p {
   margin-top: 10px;
   margin-bottom: 15px;
-  font-size: 1.1rem;
 }
-.health-widget > span:nth-of-type(2) {
+.health-widget > span {
   font-size: 1.3rem;
 }
 
@@ -296,13 +291,6 @@ h6 {
 }
 #upload > div > div > span {
   margin-left: 20px;
-  color: var(--grey);
-  font-weight: 100;
-}
-#upload p {
-  color: var(--grey);
-  font-size: 1.3rem;
-  font-weight: 300;
 }
 .progress {
   width: 300px;
@@ -323,7 +311,6 @@ h6 {
 }
 #upload > i {
   font-size: 1.75rem;
-  color: var(--grey);
   border: 1px solid var(--grey);
   border-radius: 50%;
   padding: 0px 4px;
@@ -335,10 +322,6 @@ h6 {
   align-items: center;
 }
 #travel p {
-  font-size: 1.2rem;
-  color: var(--grey);
-  font-weight: 300;
-  line-height: 2rem;
   margin: 10px 0;
 }
 #travel img {
@@ -359,10 +342,6 @@ h6 {
 }
 #icons i {
   font-size: 2rem;
-  color: var(--grey);
-}
-#icons i.active {
-  color: var(--black);
 }
 
 /* User Widget */
@@ -387,7 +366,6 @@ h6 {
   object-fit: cover;
 }
 .blog span {
-  color: var(--grey);
   margin-right: 20px;
 }
 
@@ -411,10 +389,6 @@ h6 {
 }
 #progress p {
   margin: 30px 0;
-  color: var(--grey);
-  font-size: 1.2rem;
-  font-weight: 300;
-  line-height: 2rem;
 }
 
 /* Travel Widget */
@@ -430,12 +404,6 @@ h6 {
 }
 #ticket > h2 {
   margin: 30px 0;
-}
-#ticket > p {
-  font-size: 1.3rem;
-  line-height: 3rem;
-  color: var(--grey);
-  font-weight: 300;
 }
 #ticket button {
   margin: 0 4px;
