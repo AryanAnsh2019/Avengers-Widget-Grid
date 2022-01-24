@@ -41,17 +41,26 @@ body {
 .column > .widget {
   width: 100%;
 }
-.column:nth-of-type(3) > div {
+/* .column:nth-of-type(3) > div {
   width: 520px;
   display: flex;
   justify-content: space-between;
+} */
+.row:nth-of-type(1) > .column:nth-of-type(1) {
+  width:400px;
 }
-.column:nth-of-type(1) .widget {
-  width: 400px;
+.row:nth-of-type(1) > .column:nth-of-type(2) {
+  width:400px;
 }
-
-
-
+.row:nth-of-type(2) > .column:nth-of-type(1) {
+  width:650px;
+}
+.row:nth-of-type(2) > .column:nth-of-type(2) {
+  width:350px;
+}
+.row:nth-of-type(2) > .column:nth-of-type(3){
+  width:340px;
+}
 /* Utils */
 button {
   padding: 15px 30px;
@@ -67,8 +76,6 @@ button {
   background-color: #19151f;
   color: #fff;
 }
-
-
 
 /* Widget Styling */
 .widget {
@@ -142,9 +149,6 @@ button {
 }
 
 /* Payment Widget */
-#payment {
-  width: 400px;
-}
 #payment i {
   position: relative;
 }
@@ -174,7 +178,6 @@ button {
 
 /* Current Widget */
 #current {
-  width: 400px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -193,7 +196,6 @@ button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 400px;
   height: 400px;
   position: relative;
 }
@@ -315,7 +317,6 @@ button {
 
 /* Travel Widget */
 #travel {
-  width: 650px;
   display: inline-flex;
   align-items: center;
 }
@@ -342,7 +343,9 @@ button {
   display: inline-flex;
   justify-content: space-around;
   align-items: center;
-  width: 445px;
+  width: 60%;
+  margin:10px;
+  margin-left:0;
 }
 #icons i {
   font-size: 2rem;
@@ -357,20 +360,20 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 195px;
+  width:40%;
+  margin:10px 0;
 }
 
 /* Blogs Widget */
 #blogs {
   padding-left: 0;
   padding-right: 0;
-  width: 650px;
   display: inline-flex;
   justify-content: space-evenly;
 }
 .blog img {
   width: 300px;
-  height: 250px;
+  height: 220px;
   object-fit: cover;
 }
 .blog h5 {
@@ -384,7 +387,6 @@ button {
 
 /* Progress Widget */
 #progress {
-  width: 340px;
   height: 100%;
 }
 #progress img {
@@ -434,24 +436,18 @@ button {
   font-weight: 300;
 }
 #ticket button {
-  margin: 0 5px;
+  margin:0 4px;
   margin-top: 30px;
 }
 
 /* Map Widget */
-#map {
-  height: calc(100% - 520px);
-  width: 350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 #map img {
   width: 100%;
   height: 120px;
   object-fit: cover;
 }
 #map p {
+  margin-top:15px;
   font-size: 1.2rem;
   display: flex;
   justify-content: space-between;
