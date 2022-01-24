@@ -67,7 +67,6 @@ body {
   width: 340px;
 }
 
-
 /* Utils */
 button {
   padding: 15px 30px;
@@ -97,6 +96,30 @@ button {
   width: 100%;
   font-size: 1.1rem;
 }
+h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+h3 {
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+h4 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+h5 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+h6 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
 
 /* Widget Styling */
 .widget {
@@ -107,10 +130,6 @@ button {
 }
 
 /* Account widget */
-#account h5 {
-  font-size: 2.5rem;
-  font-weight: 400;
-}
 #account p {
   color: var(--grey);
 }
@@ -136,10 +155,6 @@ button {
   padding: 10px 15px;
   border-radius: 50%;
   box-shadow: 0 5px 10px 3px rgba(0, 0, 0, 0.3);
-}
-#weather h5 {
-  font-size: 1.5rem;
-  font-weight: 400;
 }
 #weather span {
   font-size: 0.9rem;
@@ -169,11 +184,9 @@ button {
   border-radius: 50%;
   background-color: var(--red);
 }
-#payment > h5 {
+#payment > h4 {
   display: flex;
   justify-content: space-between;
-  font-size: 2rem;
-  font-weight: 400;
 }
 #payment > p {
   color: var(--grey);
@@ -222,9 +235,7 @@ button {
   flex-direction: column;
   border: 5px solid var(--brown);
 }
-#time h5 {
-  font-size: 2.75rem;
-  font-weight: 400;
+#time h1 {
   color: var(--brown);
 }
 #time span {
@@ -245,8 +256,6 @@ button {
   font-size: 3.5rem;
 }
 .health-widget > h5 {
-  font-size: 1.8rem;
-  font-weight: 500;
   margin-top: 20px;
 }
 .health-widget > span {
@@ -284,10 +293,6 @@ button {
 #upload > div > div {
   display: flex;
   align-items: center;
-}
-#upload > div > div > h5 {
-  font-size: 2rem;
-  font-weight: 400;
 }
 #upload > div > div > span {
   margin-left: 20px;
@@ -328,10 +333,6 @@ button {
 #travel {
   display: inline-flex;
   align-items: center;
-}
-#travel h5 {
-  font-size: 2rem;
-  font-weight: 400;
 }
 #travel p {
   font-size: 1.2rem;
@@ -385,10 +386,6 @@ button {
   height: 220px;
   object-fit: cover;
 }
-.blog h5 {
-  font-size: 1.5rem;
-  font-weight: 400;
-}
 .blog span {
   color: var(--grey);
   margin-right: 20px;
@@ -409,10 +406,8 @@ button {
   font-size: 1.4rem;
   font-weight: 500;
 }
-#progress h5 {
-  font-size: 2.2rem;
+#progress h3 {
   color: var(--brown);
-  font-weight: 400;
 }
 #progress p {
   margin: 30px 0;
@@ -433,9 +428,7 @@ button {
   background-color: var(--lightgreen);
   color: var(--darkgreen);
 }
-#ticket > h5 {
-  font-size: 2.5rem;
-  font-weight: 400;
+#ticket > h2 {
   margin: 30px 0;
 }
 #ticket > p {
