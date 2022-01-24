@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Widget Grid</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="row">
+        <div class="column">
+          <div class="widget" id="account">
+            <img
+              src="https://i0.wp.com/lylesmoviefiles.com/wp-content/uploads/2019/08/hot-toys-avengers-infinity-war-iron-spider-figure-review-main-pic-e1567184732489.jpg?fit=1000%2C731&ssl=1&resize=1280%2C720"
+              alt=""
+            />
+            <h5>Get Started</h5>
+            <p>Lets create your account</p>
+            <div class="input">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" placeholder="e.g. Peter Parker" />
+            </div>
+            <div class="input">
+              <label for="email">Email</label>
+              <input type="email" placeholder="spidey@mit.edu" id="email" />
+            </div>
+            <button class="btn-dark">Get Started</button>
+          </div>
+
+          <div class="widget" id="weather">
+            <button><i class="bi bi-cloud-drizzle-fill"></i></button>
+            <div>
+              <h5>Rainy Day</h5>
+              <span>20&#176; C</span>
+            </div>
+            <i class="bi bi-arrow-right"></i>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="widget" id="payment">
+            <h5><span>Payment Success</span><i class="bi bi-bell-fill"></i></h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+              itaque ullam accusantium nostrum, minima voluptatibus!
+            </p>
+          </div>
+          <div id="current" class="widget">
+            <i class="bi bi-calendar2-date-fill"></i>
+            <p>12:25pm, Wednesday</p>
+          </div>
+
+          <div class="widget" id="time">
+            <div>
+              <div>
+                <h5>5:30</h5>
+                <span>Remaining Time</span>
+              </div>
+            </div>
+            <p>Upload My Record</p>
+          </div>
+        </div>
+        <div class="column">
+          <div>
+            <div class="widget health-widget">
+              <i class="bi bi-activity main-icon"></i>
+              <h5>Blood<br />Glucose Level</h5>
+              <span>Checkup now <i class="bi bi-arrow-right"></i></span>
+              <span>- 138 mg/dl</span>
+            </div>
+            <div class="widget health-widget">
+              <i class="bi bi-thermometer-half main-icon"></i>
+              <h5>Body<br />Temperature</h5>
+              <span>Normal</span>
+              <span>35.4&#176; C</span>
+            </div>
+          </div>
+          <div>
+            <div class="widget health-widget">
+              <i class="bi bi-heart-fill main-icon"></i>
+              <h5>Blood<br />Pressure</h5>
+              <span>Checkup now <i class="bi bi-arrow-right"></i></span>
+              <span>- 120/80 mmHg</span>
+            </div>
+            <div class="widget health-widget">
+              <i class="bi bi-moon-stars-fill main-icon"></i>
+              <h5>Daily<br />Sleep</h5>
+              <span>Normal</span>
+              <span> - 8hour</span>
+            </div>
+          </div>
+          <div class="widget" id="upload">
+            <span><i class="bi bi-cloud-arrow-up-fill"></i></span>
+            <div>
+              <div>
+                <h5>75%</h5>
+                <span>Uploading</span>
+              </div>
+              <div class="progress"></div>
+              <p>We are processing your files.</p>
+            </div>
+            <i class="bi bi-pause"></i>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="widget" id="travel">
+            <img
+              src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/marvel-studios-cinematic-universe/f/f2/Stark_Tower.jpg"
+              alt=""
+            />
+            <div>
+              <h5>Get a Trip to the Stark Tower</h5>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde
+                placeat iure cumque, mollitia tempora vero.
+              </p>
+              <button class="btn-dark">Check It Out</button>
+            </div>
+          </div>
+          <div class="subrow">
+            <div class="widget" id="icons">
+              <i class="bi bi-house-door"></i>
+              <i class="bi bi-credit-card-2-front active"></i>
+              <i class="bi bi-bag"></i>
+              <i class="bi bi-alarm"></i>
+              <i class="bi bi-award"></i>
+            </div>
+            <div id="user" class="widget">
+              <i class="bi bi-person-fill"></i><span>Clint Barton</span>
+            </div>
+          </div>
+          <div id="blogs" class="widget">
+            <div class="blog">
+              <img
+                src="https://www.filmink.com.au/wp-content/uploads/2017/05/111-Thor.jpg"
+                alt=""
+              />
+              <h5>How to Wield a Hammer</h5>
+              <div><span>By Thor Odinson</span><span>2 Days Ago</span></div>
+            </div>
+            <div class="blog">
+              <img
+                src="https://cdn.costumewall.com/wp-content/uploads/2018/04/ww2-captain-america.jpg"
+                alt=""
+              />
+              <h5>The WW2 Story</h5>
+              <div><span>By Steve Rogers</span><span>5 Days Ago</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div id="progress" class="widget">
+            <img
+              src="https://www.blendernation.com/wp-content/uploads/2019/12/Top.png"
+              alt=""
+            />
+            <span>Progress Report</span>
+            <h5>Creating EDITH</h5>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Molestiae recusandae, eum aliquam ipsa provident natus voluptates.
+              Pariatur voluptatum dolore, ex saepe est, non earum nisi ipsa hic,
+              officia ullam magni.
+            </p>
+            <div class="progress"></div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="widget" id="ticket">
+            <div id="badge">Hello</div>
+            <h5>Do not forget!<br />About your ticket</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
+              laudantium fugiat, ea doloribus libero officia.
+            </p>
+            <div>
+              <button class="btn-dark">Do It Now</button
+              ><button class="btn-light">Later On</button>
+            </div>
+          </div>
+          <div class="widget" id="map">
+            <img
+              src="https://www.nycinsiderguide.com/wp-content/uploads/2019/04/new-york-city-street-map.jpg"
+              alt=""
+            />
+            <p>
+              <i class="bi bi-geo-alt-fill"></i
+              ><span>177A Bleecker Street, NYC</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
