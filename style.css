@@ -83,6 +83,20 @@ button {
   background-color: var(--black);
   color: var(--white);
 }
+.input {
+  margin: 20px 0;
+}
+.input > label {
+  font-size: 1.2rem;
+}
+.input > input {
+  background-color: var(--offwhite);
+  outline: none;
+  border: none;
+  padding: 20px;
+  width: 100%;
+  font-size: 1.1rem;
+}
 
 /* Widget Styling */
 .widget {
@@ -105,20 +119,6 @@ button {
   height: 200px;
   margin-bottom: 20px;
   object-fit: cover;
-}
-.input {
-  margin: 20px 0;
-}
-.input > label {
-  font-size: 1.2rem;
-}
-.input > input {
-  background-color: var(--offwhite);
-  outline: none;
-  border: none;
-  padding: 20px;
-  width: 100%;
-  font-size: 1.1rem;
 }
 #account button {
   width: 100%;
