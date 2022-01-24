@@ -5,10 +5,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: var(--black);
   font-family: "Outfit", serif;
 }
 html,
 body {
+  --black: #19151f;
+  --white: #fff;
+  --offwhite: #f3f3f3;
+  --brown: #dcbb9f;
+  --grey: #b6b6b6;
+  --red: #f57790;
+  --lightgreen: #97cb99;
+  --darkgreen: #0c2e10;
+
   height: 100%;
 }
 
@@ -41,26 +51,23 @@ body {
 .column > .widget {
   width: 100%;
 }
-/* .column:nth-of-type(3) > div {
-  width: 520px;
-  display: flex;
-  justify-content: space-between;
-} */
 .row:nth-of-type(1) > .column:nth-of-type(1) {
-  width:400px;
+  width: 400px;
 }
 .row:nth-of-type(1) > .column:nth-of-type(2) {
-  width:400px;
+  width: 400px;
 }
 .row:nth-of-type(2) > .column:nth-of-type(1) {
-  width:650px;
+  width: 650px;
 }
 .row:nth-of-type(2) > .column:nth-of-type(2) {
-  width:350px;
+  width: 350px;
 }
-.row:nth-of-type(2) > .column:nth-of-type(3){
-  width:340px;
+.row:nth-of-type(2) > .column:nth-of-type(3) {
+  width: 340px;
 }
+
+
 /* Utils */
 button {
   padding: 15px 30px;
@@ -70,16 +77,16 @@ button {
   cursor: pointer;
 }
 .btn-light {
-  background-color: #f3f3f3;
+  background-color: var(--offwhite);
 }
 .btn-dark {
-  background-color: #19151f;
-  color: #fff;
+  background-color: var(--black);
+  color: var(--white);
 }
 
 /* Widget Styling */
 .widget {
-  background-color: #fff;
+  background-color: var(--white);
   box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.2);
   display: inline-block;
   padding: 20px;
@@ -91,7 +98,7 @@ button {
   font-weight: 400;
 }
 #account p {
-  color: #b6b6b6;
+  color: var(--grey);
 }
 #account > img {
   width: 100%;
@@ -106,7 +113,7 @@ button {
   font-size: 1.2rem;
 }
 .input > input {
-  background-color: #f3f3f3;
+  background-color: var(--offwhite);
   outline: none;
   border: none;
   padding: 20px;
@@ -125,7 +132,7 @@ button {
 }
 #weather > button {
   font-size: 1.7rem;
-  background-color: #f3f3f3;
+  background-color: var(--offwhite);
   padding: 10px 15px;
   border-radius: 50%;
   box-shadow: 0 5px 10px 3px rgba(0, 0, 0, 0.3);
@@ -136,13 +143,13 @@ button {
 }
 #weather span {
   font-size: 0.9rem;
-  color: #b6b6b6;
+  color: var(--grey);
   font-weight: 500;
 }
 #weather > i {
   font-size: 1.4rem;
-  color: #b6b6b6;
-  border: 1px solid #b6b6b6;
+  color: var(--grey);
+  border: 1px solid var(--grey);
   border-radius: 50%;
   padding: 2px 5px;
   cursor: pointer;
@@ -160,7 +167,7 @@ button {
   height: 10px;
   width: 10px;
   border-radius: 50%;
-  background-color: #f57790;
+  background-color: var(--red);
 }
 #payment > h5 {
   display: flex;
@@ -169,7 +176,7 @@ button {
   font-weight: 400;
 }
 #payment > p {
-  color: #b6b6b6;
+  color: var(--grey);
   margin-top: 20px;
   font-size: 1.2rem;
   line-height: 2rem;
@@ -200,7 +207,7 @@ button {
   position: relative;
 }
 #time div {
-  background-color: #f3f3f3;
+  background-color: var(--offwhite);
   box-shadow: 8px -9px 39px 0px rgba(0, 0, 0, 0.2);
   height: 250px;
   width: 250px;
@@ -213,15 +220,15 @@ button {
   height: 200px;
   width: 200px;
   flex-direction: column;
-  border: 5px solid #dcbb9f;
+  border: 5px solid var(--brown);
 }
 #time h5 {
   font-size: 2.75rem;
   font-weight: 400;
-  color: #dcbb9f;
+  color: var(--brown);
 }
 #time span {
-  color: #b6b6b6;
+  color: var(--grey);
 }
 #time p {
   position: absolute;
@@ -234,7 +241,7 @@ button {
   width: 250px;
 }
 .health-widget > .main-icon {
-  color: #c4ac99;
+  color: var(--brown);
   font-size: 3.5rem;
 }
 .health-widget > h5 {
@@ -246,7 +253,7 @@ button {
   display: block;
 }
 .health-widget > span:nth-of-type(1) {
-  color: #b6b6b6;
+  color: var(--grey);
   margin-top: 10px;
   margin-bottom: 15px;
   font-size: 1.1rem;
@@ -264,10 +271,12 @@ button {
 #upload > span:nth-of-type(1) {
   display: inline-block;
   font-size: 1.7rem;
-  background-color: #000;
-  color: #fff;
+  background-color: var(--black);
   padding: 8px 12px;
   border-radius: 50%;
+}
+#upload > span:nth-of-type(1) > i {
+  color: var(--white);
 }
 #upload > div {
   margin: 0 40px;
@@ -282,11 +291,11 @@ button {
 }
 #upload > div > div > span {
   margin-left: 20px;
-  color: #b6b6b6;
+  color: var(--grey);
   font-weight: 100;
 }
 #upload p {
-  color: #b6b6b6;
+  color: var(--grey);
   font-size: 1.3rem;
   font-weight: 300;
 }
@@ -294,7 +303,7 @@ button {
   width: 300px;
   height: 10px;
   border-radius: 50rem;
-  background-color: #f6f6f6;
+  background-color: var(--offwhite);
   position: relative;
   overflow: hidden;
 }
@@ -305,12 +314,12 @@ button {
   left: 0;
   height: 100%;
   width: 75%;
-  background-color: #c4ac99;
+  background-color: var(--brown);
 }
 #upload > i {
   font-size: 1.75rem;
-  color: #b6b6b6;
-  border: 1px solid #b6b6b6;
+  color: var(--grey);
+  border: 1px solid var(--grey);
   border-radius: 50%;
   padding: 0px 4px;
 }
@@ -326,7 +335,7 @@ button {
 }
 #travel p {
   font-size: 1.2rem;
-  color: #b6b6b6;
+  color: var(--grey);
   font-weight: 300;
   line-height: 2rem;
   margin: 10px 0;
@@ -344,15 +353,15 @@ button {
   justify-content: space-around;
   align-items: center;
   width: 60%;
-  margin:10px;
-  margin-left:0;
+  margin: 10px;
+  margin-left: 0;
 }
 #icons i {
   font-size: 2rem;
-  color: #b6b6b6;
+  color: var(--grey);
 }
 #icons i.active {
-  color: #000;
+  color: var(--black);
 }
 
 /* User Widget */
@@ -360,8 +369,8 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width:40%;
-  margin:10px 0;
+  width: 40%;
+  margin: 10px 0;
 }
 
 /* Blogs Widget */
@@ -381,7 +390,7 @@ button {
   font-weight: 400;
 }
 .blog span {
-  color: #b6b6b6;
+  color: var(--grey);
   margin-right: 20px;
 }
 
@@ -402,12 +411,12 @@ button {
 }
 #progress h5 {
   font-size: 2.2rem;
-  color: #dcbb9f;
+  color: var(--brown);
   font-weight: 400;
 }
 #progress p {
   margin: 30px 0;
-  color: #b6b6b6;
+  color: var(--grey);
   font-size: 1.2rem;
   font-weight: 300;
   line-height: 2rem;
@@ -421,8 +430,8 @@ button {
   display: inline-block;
   font-size: 1.2rem;
   padding: 2px 5px;
-  background-color: #97cb99;
-  color: #0c2e10;
+  background-color: var(--lightgreen);
+  color: var(--darkgreen);
 }
 #ticket > h5 {
   font-size: 2.5rem;
@@ -432,11 +441,11 @@ button {
 #ticket > p {
   font-size: 1.3rem;
   line-height: 3rem;
-  color: #b6b6b6;
+  color: var(--grey);
   font-weight: 300;
 }
 #ticket button {
-  margin:0 4px;
+  margin: 0 4px;
   margin-top: 30px;
 }
 
@@ -447,7 +456,7 @@ button {
   object-fit: cover;
 }
 #map p {
-  margin-top:15px;
+  margin-top: 15px;
   font-size: 1.2rem;
   display: flex;
   justify-content: space-between;
