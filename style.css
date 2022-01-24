@@ -83,7 +83,7 @@ button {
   color: var(--white);
 }
 .input {
-  margin: 20px 0;
+  margin: 15px 0;
 }
 .input > label {
   font-size: 1.2rem;
