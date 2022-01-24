@@ -11,6 +11,8 @@ html,
 body {
   height: 100%;
 }
+
+/* Rows and Columns */
 #container {
   width: 100vw;
   height: 100%;
@@ -34,8 +36,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   margin: 0 10px;
+}
+.column > .widget {
+  width: 100%;
 }
 .column:nth-of-type(3) > div {
   width: 520px;
@@ -45,32 +49,10 @@ body {
 .column:nth-of-type(1) .widget {
   width: 400px;
 }
-#ticket {
-  display: inline-block;
-  width: 350px;
-}
-#badge {
-  display: inline-block;
-  font-size: 1.2rem;
-  padding: 2px 5px;
-  background-color: #97cb99;
-  color: #0c2e10;
-}
-#ticket > h5 {
-  font-size: 2.5rem;
-  font-weight: 400;
-  margin: 30px 0;
-}
-#ticket > p {
-  font-size: 1.3rem;
-  line-height: 3rem;
-  color: #b6b6b6;
-  font-weight: 300;
-}
-#ticket button {
-  margin: 0 5px;
-  margin-top: 30px;
-}
+
+
+
+/* Utils */
 button {
   padding: 15px 30px;
   border: none;
@@ -85,12 +67,167 @@ button {
   background-color: #19151f;
   color: #fff;
 }
+
+
+
+/* Widget Styling */
 .widget {
   background-color: #fff;
   box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.2);
   display: inline-block;
   padding: 20px;
 }
+
+/* Account widget */
+#account h5 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+#account p {
+  color: #b6b6b6;
+}
+#account > img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+.input {
+  margin: 20px 0;
+}
+.input > label {
+  font-size: 1.2rem;
+}
+.input > input {
+  background-color: #f3f3f3;
+  outline: none;
+  border: none;
+  padding: 20px;
+  width: 100%;
+  font-size: 1.1rem;
+}
+#account button {
+  width: 100%;
+}
+
+/* Weather widget */
+#weather {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#weather > button {
+  font-size: 1.7rem;
+  background-color: #f3f3f3;
+  padding: 10px 15px;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px 3px rgba(0, 0, 0, 0.3);
+}
+#weather h5 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+#weather span {
+  font-size: 0.9rem;
+  color: #b6b6b6;
+  font-weight: 500;
+}
+#weather > i {
+  font-size: 1.4rem;
+  color: #b6b6b6;
+  border: 1px solid #b6b6b6;
+  border-radius: 50%;
+  padding: 2px 5px;
+  cursor: pointer;
+}
+
+/* Payment Widget */
+#payment {
+  width: 400px;
+}
+#payment i {
+  position: relative;
+}
+#payment i::after {
+  content: "";
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #f57790;
+}
+#payment > h5 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  font-weight: 400;
+}
+#payment > p {
+  color: #b6b6b6;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: 300;
+}
+
+/* Current Widget */
+#current {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#current i,
+#user > i {
+  font-size: 2rem;
+}
+#current p,
+#user > span {
+  font-size: 1.2rem;
+}
+
+/* Time Widget */
+#time {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+#time div {
+  background-color: #f3f3f3;
+  box-shadow: 8px -9px 39px 0px rgba(0, 0, 0, 0.2);
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#time > div > div {
+  height: 200px;
+  width: 200px;
+  flex-direction: column;
+  border: 5px solid #dcbb9f;
+}
+#time h5 {
+  font-size: 2.75rem;
+  font-weight: 400;
+  color: #dcbb9f;
+}
+#time span {
+  color: #b6b6b6;
+}
+#time p {
+  position: absolute;
+  bottom: 40px;
+  font-size: 1.2rem;
+}
+
+/* Health Widget */
 .health-widget {
   width: 250px;
 }
@@ -115,6 +252,8 @@ button {
 .health-widget > span:nth-of-type(2) {
   font-size: 1.3rem;
 }
+
+/* Upload Widget */
 #upload {
   display: inline-flex;
   justify-content: space-between;
@@ -173,114 +312,8 @@ button {
   border-radius: 50%;
   padding: 0px 4px;
 }
-#icons {
-  display: inline-flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 445px;
-}
-#icons i {
-  font-size: 2rem;
-  color: #b6b6b6;
-}
-#icons i.active {
-  color: #000;
-}
-#weather {
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-around;
-}
-#weather > button {
-  font-size: 1.7rem;
-  background-color: #f3f3f3;
-  padding: 10px 15px;
-  border-radius: 50%;
-  box-shadow: 0 5px 10px 3px rgba(0, 0, 0, 0.3);
-}
-#weather h5 {
-  font-size: 1.5rem;
-  font-weight: 400;
-}
-#weather span {
-  font-size: 0.9rem;
-  color: #b6b6b6;
-  font-weight: 500;
-}
-#weather > i {
-  font-size: 1.4rem;
-  color: #b6b6b6;
-  border: 1px solid #b6b6b6;
-  border-radius: 50%;
-  padding: 2px 5px;
-  cursor: pointer;
-}
-#payment {
-  width: 400px;
-}
-#payment i {
-  position: relative;
-}
-#payment i::after {
-  content: "";
-  position: absolute;
-  right: 3px;
-  top: 3px;
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-  background-color: #f57790;
-}
-#payment > h5 {
-  display: flex;
-  justify-content: space-between;
-  font-size: 2rem;
-  font-weight: 400;
-}
-#payment > p {
-  color: #b6b6b6;
-  margin-top: 20px;
-  font-size: 1.2rem;
-  line-height: 2rem;
-  font-weight: 300;
-}
-#time {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 400px;
-  height: 400px;
-  position: relative;
-}
-#time div {
-  background-color: #f3f3f3;
-  box-shadow: 8px -9px 39px 0px rgba(0, 0, 0, 0.2);
-  height: 250px;
-  width: 250px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#time > div > div {
-  height: 200px;
-  width: 200px;
-  flex-direction: column;
-  border: 5px solid #dcbb9f;
-}
-#time h5 {
-  font-size: 2.75rem;
-  font-weight: 400;
-  color: #dcbb9f;
-}
-#time span {
-  color: #b6b6b6;
-}
-#time p {
-  position: absolute;
-  bottom: 40px;
-  font-size: 1.2rem;
-}
+
+/* Travel Widget */
 #travel {
   width: 650px;
   display: inline-flex;
@@ -303,6 +336,31 @@ button {
   object-fit: cover;
   margin-right: 30px;
 }
+
+/* Icons Widget */
+#icons {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 445px;
+}
+#icons i {
+  font-size: 2rem;
+  color: #b6b6b6;
+}
+#icons i.active {
+  color: #000;
+}
+
+/* User Widget */
+#user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 195px;
+}
+
+/* Blogs Widget */
 #blogs {
   padding-left: 0;
   padding-right: 0;
@@ -323,36 +381,8 @@ button {
   color: #b6b6b6;
   margin-right: 20px;
 }
-#account h5 {
-  font-size: 2.5rem;
-  font-weight: 400;
-}
-#account p {
-  color: #b6b6b6;
-}
-#account > img {
-  width: 100%;
-  height: 200px;
-  margin-bottom: 20px;
-  object-fit: cover;
-}
-.input {
-  margin: 20px 0;
-}
-.input > label {
-  font-size: 1.2rem;
-}
-.input > input {
-  background-color: #f3f3f3;
-  outline: none;
-  border: none;
-  padding: 20px;
-  width: 100%;
-  font-size: 1.1rem;
-}
-#account button {
-  width: 100%;
-}
+
+/* Progress Widget */
 #progress {
   width: 340px;
   height: 100%;
@@ -380,26 +410,35 @@ button {
   font-weight: 300;
   line-height: 2rem;
 }
-#current {
-  width: 400px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+/* Travel Widget */
+#ticket {
+  display: inline-block;
 }
-#current i,
-#user > i {
-  font-size: 2rem;
-}
-#current p,
-#user > span {
+#badge {
+  display: inline-block;
   font-size: 1.2rem;
+  padding: 2px 5px;
+  background-color: #97cb99;
+  color: #0c2e10;
 }
-#user {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 195px;
+#ticket > h5 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 30px 0;
 }
+#ticket > p {
+  font-size: 1.3rem;
+  line-height: 3rem;
+  color: #b6b6b6;
+  font-weight: 300;
+}
+#ticket button {
+  margin: 0 5px;
+  margin-top: 30px;
+}
+
+/* Map Widget */
 #map {
   height: calc(100% - 520px);
   width: 350px;
