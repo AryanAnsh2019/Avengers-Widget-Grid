@@ -252,13 +252,11 @@ h6 {
 }
 .health-widget > span {
   display: block;
+  font-weight: 400;
 }
 .health-widget > p {
   margin-top: 10px;
   margin-bottom: 15px;
-}
-.health-widget > span {
-  font-size: 1.3rem;
 }
 
 /* Upload Widget */
@@ -430,4 +428,45 @@ h6 {
   font-size: 1.2rem;
   display: flex;
   justify-content: space-between;
+}
+
+/* Responsiveness */
+@media (max-width: 1420px) {
+  h1 {
+    font-size: 2.3rem;
+  }
+  h2 {
+    font-size: 2.3rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.8rem;
+  }
+  h5 {
+    font-size: 1.6rem;
+  }
+  h6 {
+    font-size: 1.4rem;
+  }
+  .hero {
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+  }
+  .lead {
+    font-size: 1.1rem;
+  }
+  button{
+    padding: 13px 20px;
+    font-size:1rem;
+  }
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
 }
