@@ -71,8 +71,9 @@ body {
 .grid {
   display: grid;
   grid-template-columns: repeat(20, calc(5% - 1em));
-  max-width: 100%;
-  /* grid-template-rows: repeat(20, 5%); */
+  width: 100vw;
+  height:100vh;
+  grid-template-rows: repeat(20, calc(5% - 1em));
   gap: 1rem;
   padding: 1rem;
 }
@@ -154,6 +155,7 @@ h6 {
 /* Account widget */
 #account {
   grid-column: 1/6;
+  grid-row: 1/18;
 }
 #account > img {
   width: 100%;
@@ -171,6 +173,7 @@ h6 {
   align-items: center;
   justify-content: space-around;
   grid-column:6/12;
+  grid-row: 7/10;
 }
 #weather > button {
   font-size: 1.7rem;
@@ -190,6 +193,7 @@ h6 {
 /* Payment Widget */
 #payment {
   grid-column: 6/12;
+  grid-row: 1/7;
 }
 #payment i {
   position: relative;
@@ -218,6 +222,7 @@ h6 {
   justify-content: space-between;
   align-items: center;
   grid-column: 1/6;
+  grid-row: 18/21;
 }
 #current i,
 #user > i {
@@ -233,9 +238,9 @@ h6 {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  height: 400px;
   position: relative;
   grid-column:6/12;
+  grid-row:10/21;
 }
 #time div {
   background-color: var(--offwhite);
@@ -270,7 +275,11 @@ h6 {
 #temperature, #sleep {
   grid-column: 16/20;
 }
-#pressure {
+#glucose, #temperature{
+  grid-row:1/9;
+}
+#pressure, #sleep {
+  grid-row:9/18;
 }
 .health-widget > .main-icon {
   color: var(--brown);
@@ -296,6 +305,7 @@ h6 {
   justify-content: space-between;
   align-items: center;
   grid-column: 12/20;
+  grid-row:18/21;
 }
 #upload > span:nth-of-type(1) {
   display: inline-block;
