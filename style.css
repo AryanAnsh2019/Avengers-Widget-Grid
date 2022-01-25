@@ -33,6 +33,7 @@ body {
   grid-template-rows: repeat(20, calc(5% - 1em));
   gap: 1rem;
   padding: 1rem;
+  padding-right: 0;
 }
 
 /* Utils */
