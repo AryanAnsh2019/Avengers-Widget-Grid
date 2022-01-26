@@ -367,7 +367,9 @@ h6 {
 .blog span {
   margin-right: 20px;
 }
-
+.blog:nth-of-type(3) {
+  display: none;
+}
 /* Progress Widget */
 #progress {
   height: 100%;
@@ -390,6 +392,9 @@ h6 {
 }
 #progress p {
   margin: 30px 0;
+}
+#progress .progress {
+  width: 90%;
 }
 
 /* Travel Widget */
@@ -457,12 +462,118 @@ h6 {
   .lead {
     font-size: 1.1rem;
   }
-  button{
+  button {
     padding: 13px 20px;
-    font-size:1rem;
+    font-size: 1rem;
+  }
+  .blog img {
+    width: 250px;
+  }
+  .progress {
+    width: 225px;
   }
 }
 @media (max-width: 1200px) {
+  #account {
+    grid-column: 1/8;
+  }
+  #pressure,
+  #glucose {
+    display: none;
+  }
+  #temperature {
+    grid-column: 16/21;
+    grid-row: 1/9;
+  }
+  #payment {
+    grid-column: 8/16;
+    grid-row: 13/18;
+  }
+  #weather {
+    flex-direction: column;
+    grid-column: 16/21;
+    grid-row: 9/13;
+    text-align: center;
+  }
+  #weather button {
+    margin-bottom: 10px;
+  }
+  #weather > i {
+    display: none;
+  }
+  #sleep {
+    grid-column: 16/21;
+    grid-row: 13/21;
+  }
+  #time {
+    grid-column: 8/16;
+    grid-row: 1/13;
+  }
+  #upload {
+    grid-column: 1/10;
+  }
+  #current {
+    grid-row: 18/21;
+    grid-column: 10/16;
+  }
+  #travel {
+    grid-row: 15/21;
+    grid-column: 1/15;
+  }
+  #ticket .hero {
+    font-size: 1.3rem;
+    line-height: 3rem;
+  }
+  #ticket button {
+    padding: 15px 30px;
+    font-size: 1.4rem;
+  }
+  #progress .lead {
+    font-size: 1.3rem;
+    line-height: 3rem;
+  }
+  #icons {
+    grid-row: 11/13;
+  }
+  #user {
+    grid-row: 13/15;
+  }
+  .blog img {
+    width: 220px;
+  }
+  #icons,
+  #user {
+    grid-column: 8/15;
+  }
+  #blogs {
+    grid-row: 5/21;
+    grid-column: 15/21;
+    flex-direction: column;
+    text-align: center;
+  }
+  .blog:nth-of-type(3) {
+    display: block;
+  }
+
+  #ticket {
+    grid-row: 1/11;
+    grid-column: 8/15;
+  }
+  #progress {
+    padding-bottom: 50px;
+    grid-column: 1/8;
+    grid-row: 1/15;
+  }
+  #map {
+    grid-row: 1/5;
+    grid-column: 15/21;
+  }
+  #map img {
+    height: 70%;
+  }
+  .blog {
+    padding: 20px;
+  }
 }
 @media (max-width: 992px) {
 }
