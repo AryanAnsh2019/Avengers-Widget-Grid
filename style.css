@@ -576,6 +576,74 @@ h6 {
   }
 }
 @media (max-width: 992px) {
+  #time {
+    grid-row: 1/10;
+  }
+  #time p {
+    bottom: 30px;
+  }
+  #payment {
+    grid-row: 10/18;
+  }
+  #temperature {
+    grid-row: 1/7;
+  }
+  #weather {
+    grid-row: 7/12;
+  }
+  #sleep {
+    grid-row: 12/18;
+  }
+  #upload {
+    grid-column: 1/13;
+  }
+  #current {
+    grid-column: 13/21;
+  }
+  .input {
+    margin: 30px 0;
+  }
+  .health-widget .main-icon {
+    font-size: 2.5rem;
+  }
+  #progress {
+    grid-column: 1/11;
+    grid-row: 1/11;
+  }
+  #ticket {
+    grid-row: 1/9;
+    grid-column: 11/21;
+  }
+  #map {
+    grid-row: 9/12;
+    grid-column: 11/21;
+  }
+  #user {
+    grid-column: 1/11;
+    grid-row: 11/12;
+  }
+  #blogs {
+    grid-row: 12/17;
+    grid-column: 1/18;
+    flex-direction: row;
+    text-align: left;
+  }
+  .blog img {
+    height: 250px;
+    width: 270px;
+  }
+  .blog:nth-of-type(3) {
+    display: none;
+  }
+  #icons {
+    grid-column: 18/21;
+    grid-row: 12/17;
+    flex-direction: column;
+  }
+  #travel {
+    grid-row: 17/21;
+    grid-column: 1/21;
+  }
 }
 @media (max-width: 768px) {
 }
