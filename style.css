@@ -120,6 +120,7 @@ h6 {
   height: 200px;
   margin-bottom: 20px;
   object-fit: cover;
+  object-position: center top;
 }
 #account button {
   width: 100%;
