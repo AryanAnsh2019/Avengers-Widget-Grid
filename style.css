@@ -734,4 +734,14 @@ h6 {
   }
 }
 @media (max-width: 576px) {
+  .grid{
+    display:flex;
+    flex-direction: column;
+  }
+  #account img{
+    height:200px;
+  }
+  #upload >div{
+    margin:0;
+  }
 }
