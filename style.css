@@ -646,6 +646,92 @@ h6 {
   }
 }
 @media (max-width: 768px) {
+  #account {
+    grid-row: 1/16;
+    grid-column: 1/11;
+  }
+  #account img{
+    height:120px;
+  }
+  .input{
+    margin: 20px 0;
+  }
+  #time {
+    grid-row: 1/9;
+    grid-column: 11/21;
+  }
+  #time > div {
+    width: 200px;
+    height: 200px;
+  }
+  #time > div > div {
+    width: 175px;
+    height: 175px;
+  }
+  #time p{
+    bottom:10px;
+  }
+  #payment{
+    grid-row: 9/16;
+    grid-column: 11/21;
+  }
+  #payment h4{
+    font-size:1.5rem;
+  }
+  .health-widget{
+    display:none;
+  }
+  #upload{
+    grid-column: 1/17;
+  }
+  #weather{
+    grid-row:16/21;
+    grid-column: 17/21;
+  }
+  #current{
+    grid-column: 1/17;
+    grid-row: 16/18;
+  }
+  #progress{
+    grid-column: 1/21;
+    grid-row: 1/7;
+  }
+  #ticket{
+    grid-row: 7/11;
+    grid-column: 1/21;
+  }
+  #map{
+    grid-row: 11/13;
+    grid-column: 1/21;
+  }
+  #user{
+    grid-row: 13/14;
+    grid-column: 1/9;
+  }
+  #icons{
+    flex-direction: row;
+    grid-column: 9/21;
+    grid-row: 13/14;
+  }
+  #blogs{
+    flex-direction: column;
+    text-align: center;
+    grid-column: 1/12;
+    grid-row: 14/21;
+  }
+  #travel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    grid-row: 14/21;
+    text-align: center;
+    grid-column: 12/21;
+
+  }
+  #travel img{
+    margin: 0;
+    height:300px
+  }
 }
 @media (max-width: 576px) {
 }
